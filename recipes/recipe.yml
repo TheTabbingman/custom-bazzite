@@ -20,6 +20,12 @@ modules:
   - type: rpm-ostree
     install:
       - neovim
+      - hyprland
+      - waybar
+      - xdg-desktop-portal-hyprland
+      - hyprpaper
+      - hyprlock
+      - hypridle
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
