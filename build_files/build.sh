@@ -12,6 +12,18 @@ set -ouex pipefail
 # this installs a package from fedora repos
 # dnf5 install -y tmux 
 
+dnf5 remove -y \
+    bcc \
+    bpftop \
+    bpftrace \
+    flatpak-builder \
+    nicstat \
+    numactl \
+    python3-ramalama \
+    restic \
+    sysprof \
+    usbmuxd \
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
