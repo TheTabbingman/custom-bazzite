@@ -31,6 +31,9 @@ dnf5 remove -y \
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
+flatpak uninstall -y org.mozilla.firefox
+flatpak install -y one.ablaze.floorp
+
 #### Example for enabling a System Unit File
 
 # systemctl enable podman.socket
