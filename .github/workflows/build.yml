@@ -36,6 +36,7 @@ jobs:
       id-token: write
 
     steps:
+      - run: df -h
       - name: Prepare environment
         run: |
           # Lowercase the image uri
