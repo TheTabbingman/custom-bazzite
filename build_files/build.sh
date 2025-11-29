@@ -10,10 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-if [[ "$IMAGE_NAME" == *gnome* ]]; then
-    # Install dolphin on gnome
-    dnf5 install -y dolphin
-fi
+dnf5 install -y dolphin 
 
 dnf5 remove -y \
     bcc \
