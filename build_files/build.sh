@@ -24,6 +24,12 @@ dnf5 remove -y \
     sysprof \
     usbmuxd \
 
+dnf5 remove -y thermald
+dnf5 copr enable abn/throttled
+dnf5 install -y throttled
+systemctl enable throttled.service
+dnf5 copr disable abn/throttled
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
