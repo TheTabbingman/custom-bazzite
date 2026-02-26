@@ -10,20 +10,6 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y dolphin 
-
-dnf5 remove -y \
-    bcc \
-    bpftop \
-    bpftrace \
-    flatpak-builder \
-    nicstat \
-    numactl \
-    python3-ramalama \
-    restic \
-    sysprof \
-    usbmuxd \
-
 dnf5 remove -y thermald
 dnf5 copr enable abn/throttled
 dnf5 install -y throttled
